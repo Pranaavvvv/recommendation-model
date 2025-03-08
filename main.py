@@ -8,7 +8,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 app = Flask(__name__)
 
 # Load the dataset
-df = pd.read_csv('dataset.csv')
+df = pd.read_csv('dataset2.csv')
 
 # Extract base model name (e.g., "Samsung Galaxy M06 5G" from "Samsung Galaxy M06 5G (Sage Green, 6GB RAM, 128 GB Storage)")
 df['base_model'] = df['name'].apply(lambda x: x.split('(')[0].strip())
